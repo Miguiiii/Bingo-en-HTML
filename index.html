@@ -8,8 +8,58 @@
     <title>Bingo</title>
 </head>
 <body>
-    <h1>BINGO</h1>
-    <button>Jugar</button> <br>
-    <button>Puntajes</button>
+    <div id="main-page">
+        <div id="main-menu">
+            <h1 id="game-title">BINGO</h1>
+            <button id="play-button">Jugar</button> <br>
+            <button id="see-leaderboard" onclick="toggleLeaderboard(1)">Puntajes</button>
+        </div>
+        <div id="game-selection">
+            <button id="backToMenu">&#8630</button>
+            <input type="text" id="player1-name" class="name-selector" placeholder="Nombre de Jugador 1">
+            <input type="text" id="player2-name" class="name-selector" placeholder="Nombre de Jugador 2">
+            <input type="text" id="player3-name" class="name-selector" placeholder="Nombre de Jugador 3">
+            <input type="text" id="player4-name" class="name-selector" placeholder="Nombre de Jugador 4">
+            <div>
+                <label for="carton-size">Eliga el tamaño del cartón</label>
+            <select name="tamaño-carton" id="carton-size">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            </div>
+            <button>EMPEZAR PARTIDA</button>
+        </div>
+        <div id="leader-panel">
+            <button id="leaderboard-close" onclick="toggleLeaderboard(0)">x</button>
+            <h2>Bingo Leaderboard</h2>
+            <div id="leaderboard">
+                <div class="leaderboard-titles leaderboard-cell"><b>Nombre</b></div>
+                <div class="leaderboard-titles leaderboard-cell"><b>Victorias</b></div>
+                <div class="leaderboard-cell">Miguel Menendez</div>
+                <div class="leaderboard-cell">2</div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+                <div class="leaderboard-cell"></div>
+            </div>
+        </div>
+        
+    </div>
+    
 </body>
 </html>

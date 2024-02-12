@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(68, 67, 67);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#main-page {
+    position: relative;
+    background-color: blueviolet;
+    height: 50vh;
+    width: 50vw;
+}
+
+#main-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(164, 164, 187);
+    scale: 1;
+}
+
+#game-title {
+    padding-bottom: 10vh;
+    background-color: aqua;
+    transform: translate(0, -5vh);
+}
+
+#leader-panel {
+    position: relative;
+    scale: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+    background-color: crimson;
+}
+
+#leaderboard-close {
+    position:absolute;
+    transform: translate(0%);
+    top: 0%;
+    right: 0%;
+    border-radius: 100%;
+    scale: 2;
+}
+
+#leaderboard {
+    display: grid;
+    /* background-color: bisque; */
+    height: 80%;
+    width: 100%;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(11, 1fr);
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+.leaderboard-titles {
+    font-size: 115%;
+}
+
+.leaderboard-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*     background-color:chocolate;
+    border: 1px solid black; */
+    text-align: center;
+    text-justify: center;
+}
+
+#game-selection {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+    scale: 1;
+    border-radius: 10%;
+}
+
+.name-selector {
+    width: 50%;
+}
+
+#backToMenu {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    scale: 2;
+    border-radius: 100%;
+}
